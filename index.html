@@ -1,53 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>About | Christina Ruc</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="C:\Users\New User\Bootstrap-Portfolio\css\reset.css">
-	<link rel="stylesheet" type="text/css" href="C:\Users\New User\Bootstrap-Portfolio\style.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--css stylesheets -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+	<!--bootstrap stylesheet-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
 </head>
 <body>
-<!--top box of webpage-->
-	<header id="masthead">
-		<div class="container">
-			<a href="index.html" id="logo">Christina Ruc</a>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">contact</a>
-			</nav>
+<!--nav bar-->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid navbar-custom">
+
+			<div class="row">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				  	<span class="sr-only">Toggle navigation</span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				  	<span class="icon-bar"></span>
+				  </button>
+				  <div class="col-xs-12 phone-nav">
+				  	<a class="navbar-brand" href="#" id="logo">Christina Ruc</a>
+				  </div>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav navbar-right navbar-right-custom">
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">contact</a></li>
+				  </ul>				
+				</div>
+			</div>
 		</div>
-	</header>
+	</nav>
+<!--end of nav bar-->	
 
 <!--main body of webpage-->
-	<div id="main-conatiner" class="container">
-		<section class="main-section">
-			<h1>About Me</h1>
-			<a href="#"><img src="C:\Users\New User\Bootstrap-Portfolio\images\cat.jpg" alt="Cat" style="width:304px;height:228px;" align="left" /></a>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis, nisl id aliquet consectetur, dolor lorem eleifend ipsum, nec vestibulum urna turpis sed tortor. Proin bibendum cursus turpis, nec luctus lorem pulvinar ac. Duis et consequat erat, in consequat nisl. Sed iaculis odio at diam ultrices, in viverra eros convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim quam, maximus sed velit eu, dapibus auctor ligula. Praesent nec aliquam ante. Proin tempus at felis porttitor efficitur. Nam ornare vestibulum egestas.</p>
-
-			<p>Sed imperdiet tincidunt dolor, sit amet lobortis ante aliquet eget. Ut a fermentum justo. Donec efficitur tempor nisl nec lacinia. Mauris ut ex mattis nibh bibendum ornare. Etiam rhoncus lobortis accumsan. Pellentesque finibus nisl ac neque pellentesque rhoncus. Aliquam non congue ligula. Nam velit libero, cursus vitae ullamcorper ac, congue a orci.</p>
-
-		</section>
-<!--this is the icon bar on top right side-->
-	<section class="sidebar">
-			<div id="connect">
-				<h2>Connect with Me</h2>
-
-					<a href="#"><img src="C:\Users\New User\Bootstrap-Portfolio\images\github-128.png" class="social" alt="GitHub" /></a>
-					<a href="#"><img src="C:\Users\New User\Bootstrap-Portfolio\images\linkedin-128.png" class="social" alt="LinkedIn" /></a>
-					<a href="#"><img src="C:\Users\New User\Bootstrap-Portfolio\images\stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-			</div>
-		</section>
-	</div>
-
-	<footer>
+	<div class="wrap">
 		<div class="container">
+			<section class="row">
+				<div class="col-md-8">
+					<article class="about-me-container">
+						<h1 class="about-me-header">About Me</h1>
+						<hr class="about-me-hr">
+							<img src="assets/images/cat.jpg" alt="Cat" id="christina-image"/></a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis, nisl id aliquet consectetur, dolor lorem eleifend ipsum, nec vestibulum urna turpis sed tortor. Proin bibendum cursus turpis, nec luctus lorem pulvinar ac. Duis et consequat erat, in consequat nisl. Sed iaculis odio at diam ultrices, in viverra eros convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim quam, maximus sed velit eu, dapibus auctor ligula. Praesent nec aliquam ante. Proin tempus at felis porttitor efficitur. Nam ornare vestibulum egestas.</p>
+							<br />
+							<p>Sed imperdiet tincidunt dolor, sit amet lobortis ante aliquet eget. Ut a fermentum justo. Donec efficitur tempor nisl nec lacinia. Mauris ut ex mattis nibh bibendum ornare. Etiam rhoncus lobortis accumsan. Pellentesque finibus nisl ac neque pellentesque rhoncus. Aliquam non congue ligula. Nam velit libero, cursus vitae ullamcorper ac, congue a orci.</p>
+					</article> <!--about me container-->
+				</div>	<!--class col-md-8-->
+
+		
+<!--this is the icon bar on top right side-->
+				<section id="connect-with-me-area">
+					<div class="connect-with-me-content">
+						<h1 class="connect-with-me-header">Connect with Me</h1>
+						<hr />
+							<div id="images">
+							<img src="assets/images/github-128.png" class="connect-with-me-photo" alt="GitHub" /></a>
+							<img src="assets/images/linkedin-128.png" class="connect-with-me-photo" alt="LinkedIn" /></a>
+							<img src="assets/images/stackoverflow-128.png" class="connect-with-me-photo" alt="Stack Overflow" /></a>
+							</div> <!--images-->
+					</div><!--connect with me content-->
+				</section><!--connect with me area-->
+			</div> <!--class col-md-8-->
+		</section> <!--class row-->
+		</div> <!--container-->
+	</div> <!--wrap-->
+
+	<footer class="footer">
+		<div class="two-toned-footer-color">
+			<p class="text-muted text-muted-footer text-center">
 			&copy; Copyright 2016 Christina Ruc
+			</p>
 		</div>
 	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
